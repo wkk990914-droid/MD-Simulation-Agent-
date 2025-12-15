@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: MD Simulation Agent",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PATH": "/home/wangkai/conda_envs/agentic-tutorials/bin:${env:PATH}"
+            },
+            "python": "/home/wangkai/conda_envs/agentic-tutorials/bin/python",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: Test Supervisor Agent",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/agentframework/examples/test_supervisor_agent.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PATH": "/home/wangkai/conda_envs/agentic-tutorials/bin:${env:PATH}"
+            },
+            "python": "/home/wangkai/conda_envs/agentic-tutorials/bin/python",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: Test Single Agent",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/agentframework/examples/test_single_agent.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PATH": "/home/wangkai/conda_envs/agentic-tutorials/bin:${env:PATH}"
+            },
+            "python": "/home/wangkai/conda_envs/agentic-tutorials/bin/python",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

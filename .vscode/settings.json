@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "/home/wangkai/conda_envs/agentic-tutorials/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.condaPath": "/home/wangkai/conda_envs/agentic-tutorials/bin/conda"
+}

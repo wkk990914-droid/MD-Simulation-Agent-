@@ -1,0 +1,41 @@
+
+atom_style full
+units real
+boundary p p p
+pair_style lj/cut/coul/long 12.0
+kspace_style pppm 1.0e-4
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+
+# ----------------- Atom Definition Section -----------------
+read_data "Ethanol.data"
+
+thermo 100
+
+#  -- minimize -- (Minimization without fix shake)
+minimize 1.0e-5 1.0e-7 1000 10000
+reset_timestep 0
+write_data system_minimized.data
+
+# ----------------- Run Section -----------------              
+# Setup timestep
+timestep        1 #fs
+
+# Define thermo output
+thermo          1000
+thermo_style    custom step time temp pe ke etotal enthalpy press lx vol density
+
+#Create initial velocity distribution
+velocity   all create 298.0 097865 dist gaussian
+
+## Fix commands
+fix 1 all npt temp 298.0 298.0 100 iso 1.0 1.0 1000.0
+
+# Define Dumping
+#dump 1 all xyz 1000 test.xyz
+dump 3 all dcd 1000 npt_trajectory.dcd
+
+run 1000000 # 1 ns
+
+write_data system_npt_equil.data

@@ -1,0 +1,10 @@
+langchain
+langchain-ollama
+langgraph
+langgraph-supervisor
+mbuild
+foyer
+pandas
+numpy
+matplotlib
+ipython
