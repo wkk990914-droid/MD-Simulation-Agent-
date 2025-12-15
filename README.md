@@ -6,7 +6,9 @@ Agent Framework for Molecular Simulation Automation
 <img width="895" height="153" alt="image" src="https://github.com/user-attachments/assets/726a9e6c-89ee-4ce8-9eba-f460f315819b" />
 <img width="874" height="874" alt="image" src="https://github.com/user-attachments/assets/bc820f6b-6e83-48bb-b51f-a3299c6253b3" />
 <img width="801" height="625" alt="image" src="https://github.com/user-attachments/assets/4eb356eb-d12f-4113-af01-032c454cf322" />
-<img width="799" height="668" alt="image" src="https://github.com/user-attachments/assets/b04c923d-6327-4d0c-bfaa-df5455f3e466" />
+![Uploading image.png…]()
+
+
 
 
 
